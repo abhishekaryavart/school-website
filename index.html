@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/min/tiny-slider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="#" class="text-white text-2xl font-semibold">New Guru Ashram School</a>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#hero" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-teal-500 text-white py-24">
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Our School</h1>
+            <p class="text-lg mb-6">Providing quality education and state-of-the-art facilities</p>
+            <a href="#services" class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-lg hover:bg-yellow-400 transition duration-300">Explore Our Courses</a>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="absolute inset-x-0 bottom-0 pb-12">
+            <div class="overflow-hidden">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide">
+                            <img src="image/image1.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="image/image2.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="image/image4.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
+                    <p class="text-gray-700">Explore our modern campus with advanced facilities and equipment to enhance the learning experience.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Courses Offered</h3>
+                    <p class="text-gray-700">At our school, we provide a comprehensive and diverse range of courses to ensure that students receive a well-rounded education. We cater to the academic needs of students from Nursery to 10th Grade and offer various extracurricular activities that nurture their holistic development.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Experienced Faculty</h3>
+                    <p class="text-gray-700">Our faculty are highly qualified and experienced in their respective fields of study.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Watch Our School in Action</h2>
+            <p class="text-lg mb-8">Take a quick tour of our school and see how we provide the best educational experience.</p>
+            <div class="relative">
+                <iframe class="w-full h-64 rounded-lg shadow-lg" 
+                        src="https://www.youtube.com/embed/cViUdevk3SQ?si=GFcmP2g0b0PtIFrq" 
+                        
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+            <p class="mb-4">If you have any questions or want to know more, feel free to get in touch with us.</p>
+            <div class="mb-4">
+                <p class="font-semibold">Email:</p>
+                <p><a href="mailto:ngaps.co@gmail.com" class="text-yellow-300">ngaps.co@gmail.com</a></p>
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">Phone:</p>
+                <p><a href="tel:+918923412345" class="text-yellow-300">+91 9939312648</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 New Guru Ashram School. All Rights Reserved.</p>
+            <p class="mt-2 text-sm">Designed with ❤️ by abhishekaryavart</p>
+        </div>
+    </footer>
+
+    <!-- Carousel Script -->
+    <script>
+        var slider = tns({
+            container: '.carousel-wrapper',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            nav: false,
+            controls: false,
+            loop: true,
+            mouseDrag: true,
+            autoplayButtonOutput: false
+        });
+    </script>
+</body>
+
+</html>
