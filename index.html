@@ -21,6 +21,7 @@
             <ul class="flex space-x-6 text-white">
                 <li><a href="#hero" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#gallery" class="hover:text-gray-300">Gallery</a></li>
                 <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
             </ul>
         </div>
@@ -29,9 +30,6 @@
     <!-- Hero Section -->
     <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-teal-500 text-white py-24">
         <div class="container mx-auto text-center relative z-10">
-            <!-- <h1 class="text-4xl font-bold mb-4">Welcome to Our School</h1>
-            <p class="text-lg mb-6">Providing quality education and state-of-the-art facilities</p>
-            -->
             <a href="#services" class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-lg hover:bg-yellow-400 transition duration-300">Explore Our Courses</a>
         </div>
 
@@ -76,18 +74,30 @@
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section id="video" class="py-16 bg-gray-100">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-6">Watch Our School in Action</h2>
-            <p class="text-lg mb-8">Take a quick tour of our school and see how we provide the best educational experience.</p>
-            <div class="relative">
-                <iframe class="w-full h-64 rounded-lg shadow-lg" 
-                        src="https://www.youtube.com/embed/cViUdevk3SQ?si=GFcmP2g0b0PtIFrq" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                </iframe>
+            <h2 class="text-3xl font-semibold mb-8">Gallery</h2>
+            <p class="text-lg mb-6">Take a glimpse of our vibrant campus, events, and infrastructure.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery1.jpg" alt="Classroom" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery2.jpg" alt="Sports Ground" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery3.jpg" alt="Science Lab" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery4.jpg" alt="Cultural Event" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery5.jpg" alt="Library" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery6.jpg" alt="Art Room" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                </div>
             </div>
         </div>
     </section>
@@ -121,37 +131,6 @@
             <p class="mt-2 text-sm">Designed with ❤️ by abhishekaryavart</p>
         </div>
     </footer>
-
-    <!-- Carousel Script -->
-    <script>
-        var slider = tns({
-            container: '.carousel-wrapper',
-            items: 1,
-            slideBy: 'page',
-            autoplay: true,
-            nav: false,
-            controls: false,
-            loop: true,
-            mouseDrag: true,
-            autoplayButtonOutput: false
-        });
-
-        // Device detection script
-        window.addEventListener('load', () => {
-            const width = window.innerWidth;
-            const heroSection = document.getElementById("hero");
-
-            // Adjust hero section for different devices
-            if (width <= 768) {
-                console.log('Mobile or Tablet detected');
-                heroSection.classList.add('py-12'); // Adjust padding for smaller devices
-            } else {
-                console.log('Desktop detected');
-                heroSection.classList.add('py-24'); // Larger padding for desktop
-            }
-        });
-    </script>
-
 </body>
 
 </html>
