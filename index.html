@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/min/tiny-slider.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.css" rel="stylesheet">
-    <!-- Font Awesome for WhatsApp Icon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Guru Ashram School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/tiny-slider.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-
 <body class="bg-gray-50 text-gray-800">
 
-   <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
   <nav class="bg-blue-600 py-4 shadow-lg fixed top-0 left-0 w-full z-10">
     <div class="container mx-auto flex justify-between items-center px-6">
       <a href="#" class="text-white text-2xl font-semibold">New Guru Ashram School</a>
@@ -28,112 +24,129 @@
     </div>
   </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-teal-500 text-white py-24">
-        <div class="container mx-auto text-center relative z-10">
-            <h1 class="text-4xl font-bold mb-4">Welcome to Our School</h1>
-            <p class="text-lg mb-6">Providing quality education and state-of-the-art facilities</p>
-            <a href="#services" class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-lg hover:bg-yellow-400 transition duration-300">Explore Our Courses</a>
-        </div>
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-teal-500 text-white pt-24 pb-32 mt-16">
+    <div class="container mx-auto text-center relative z-10">
+      <a href="#services" class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-lg hover:bg-yellow-400 transition">Explore Our Courses</a>
+    </div>
+    <!-- Carousel -->
+    <div class="my-slider">
+      <div><img src="image/image1.jpg" class="w-full h-64 md:h-96 object-cover"></div>
+      <div><img src="image/image2.jpg" class="w-full h-64 md:h-96 object-cover"></div>
+      <div><img src="image/image3.jpg" class="w-full h-64 md:h-96 object-cover"></div>
+    </div>
+  </section>
 
-        <!-- Carousel Section -->
-        <div class="absolute inset-x-0 bottom-0 pb-12">
-            <div class="overflow-hidden">
-                <div class="carousel-container">
-                    <div class="carousel-wrapper">
-                        <div class="carousel-slide">
-                            <img src="image1.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="image2.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="image4.jpg" alt="School Infrastructure" class="w-full h-64 object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
+          <p>Modern campus with advanced facilities and equipment.</p>
         </div>
-    </section>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Courses Offered</h3>
+          <p>Comprehensive range from Nursery to 10th Grade with extracurricular activities.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Experienced Faculty</h3>
+          <p>Highly qualified and experienced teachers in their fields.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
-                    <p class="text-gray-700">Explore our modern campus with advanced facilities and equipment to enhance the learning experience.</p>
-                </div>
-                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Courses Offered</h3>
-                    <p class="text-gray-700">We provide a comprehensive and diverse range of courses from Nursery to 10th Grade, along with extracurricular activities.</p>
-                </div>
-                <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Experienced Faculty</h3>
-                    <p class="text-gray-700">Our faculty are highly qualified and experienced in their respective fields of study.</p>
-                </div>
-            </div>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Gallery</h2>
+      <p class="text-lg mb-6">Take a glimpse of our vibrant campus, events, and infrastructure.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery1.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
         </div>
-    </section>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery2.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery3.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery4.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery5.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img src="gallery6.jpg" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-8">Gallery</h2>
-            <p class="text-lg mb-6">Take a glimpse of our vibrant campus, events, and infrastructure.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery1.jpg" alt="Classroom" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery2.jpg" alt="Sports Ground" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery3.jpg" alt="Science Lab" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery4.jpg" alt="Cultural Event" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery5.jpg" alt="Library" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="gallery6.jpg" alt="Art Room" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- YouTube Video Section -->
+  <section id="video" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Watch Our Video</h2>
+      <p class="text-lg mb-6">Learn more about our school and campus by watching the video below.</p>
+      <!-- YouTube Embed -->
+      <div class="relative pb-9/16 mb-6"> <!-- 16:9 Aspect Ratio -->
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://youtu.be/cViUdevk3SQ?si=iNrg0cd2Lf47Zibr" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
-            <p class="mb-4">If you have any questions or want to know more, feel free to get in touch with us.</p>
-            <div class="mb-4">
-                <p class="font-semibold">Email:</p>
-                <p><a href="mailto:ngaps.co@gmail.com" class="text-yellow-300">ngaps.co@gmail.com</a></p>
-            </div>
-            <div class="mb-4">
-                <p class="font-semibold">Phone:</p>
-                <p><a href="tel:+918923412345" class="text-yellow-300">+91 9939312648</a></p>
-            </div>
-            <!-- WhatsApp Contact -->
-            <div class="mt-6">
-                <a href="https://wa.me/919939312648" target="_blank" class="inline-flex items-center justify-center bg-green-500 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-400 transition duration-300">
-                    <i class="fab fa-whatsapp mr-2"></i> Chat with Us on WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+      <p class="mb-4">Get in touch for any questions or more information.</p>
+      <div class="mb-4">
+        <p class="font-semibold">Email:</p>
+        <p><a href="mailto:ngaps.co@gmail.com" class="text-yellow-300">ngaps.co@gmail.com</a></p>
+      </div>
+      <div class="mb-4">
+        <p class="font-semibold">Phone:</p>
+        <p><a href="tel:+918923412345" class="text-yellow-300">+91 9939312648</a></p>
+      </div>
+      <div class="mt-6">
+        <a href="https://wa.me/919939312648" target="_blank" class="inline-flex items-center justify-center bg-green-500 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-400 transition">
+          <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 New Guru Ashram School. All Rights Reserved.</p>
-            <p class="mt-2 text-sm">Designed with ❤️ by abhishekaryavart</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 New Guru Ashram School</p>
+      <p class="mt-2 text-sm">Designed by abhishekaryavart</p>
+    </div>
+  </footer>
+
+  <!-- Tiny Slider Script -->
+  <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.3/dist/min/tiny-slider.js"></script>
+  <script>
+    // Initialize Tiny Slider
+    var slider = tns({
+      container: '.my-slider',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      controls: false,
+      nav: true,
+      autoplayButtonOutput: false,
+      speed: 500,
+      responsive: {
+        768: {
+          items: 1,
+          gutter: 20
+        }
+      }
+    });
+  </script>
 </body>
-
 </html>
