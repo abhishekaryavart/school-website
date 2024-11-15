@@ -65,7 +65,7 @@
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
                     <h3 class="text-xl font-semibold mb-4">Courses Offered</h3>
-                    <p class="text-gray-700">At our school, we provide a comprehensive and diverse range of courses to ensure that students receive a well-rounded education. We cater to the academic needs of students from Nursery to 10th Grade and offer various extracurricular activities that nurture their holistic development.</p>
+                    <p class="text-gray-700">We provide a comprehensive and diverse range of courses from Nursery to 10th Grade, along with extracurricular activities.</p>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
                     <h3 class="text-xl font-semibold mb-4">Experienced Faculty</h3>
@@ -117,7 +117,7 @@
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 New Guru Ashram School. All Rights Reserved.</p>
-            <p class="mt-2 text-sm">Designed with ❤️ by ngas it cell "abhishekaryavart"</p>
+            <p class="mt-2 text-sm">Designed with ❤️ by abhishekaryavart</p>
         </div>
     </footer>
 
@@ -133,6 +133,21 @@
             loop: true,
             mouseDrag: true,
             autoplayButtonOutput: false
+        });
+
+        // Device detection script
+        window.addEventListener('load', () => {
+            const width = window.innerWidth;
+            const heroSection = document.getElementById("hero");
+
+            // Adjust hero section for different devices
+            if (width <= 768) {
+                console.log('Mobile or Tablet detected');
+                heroSection.classList.add('py-12'); // Adjust padding for smaller devices
+            } else {
+                console.log('Desktop detected');
+                heroSection.classList.add('py-24'); // Larger padding for desktop
+            }
         });
     </script>
 
